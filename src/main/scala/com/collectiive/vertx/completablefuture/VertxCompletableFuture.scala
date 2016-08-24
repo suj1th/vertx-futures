@@ -5,6 +5,13 @@ import java.util.function.{BiFunction, Consumer, BiConsumer, Function}
 
 import scala.concurrent.Future
 
+object ExecutionMode extends Enumeration{
+
+  type ExecutionMode = Value
+
+  val IN_SAME_THREAD, IN_CONTEXT, IN_EXECUTOR = Value
+}
+
 /**
  * @author suj1th
  */
